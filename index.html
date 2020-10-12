@@ -44,7 +44,7 @@
             </nav>
         </div>
         <div class="header__container">
-            <div class="header__top-inner">
+            <div class="header__inner">
                 <h1 class="header__title">
                     Хорватия
                 </h1>
@@ -55,16 +55,11 @@
                 </p>
                 <a class="header-content__btn" href="#about">Подробнее</a>
             </div>
-            <!-- <div class="arrow__down">
-                <a href="#">
-                    <img src="images/arrow-down.png" alt="">
-                </a>
-            </div> -->
         </div>
 
     </header>
     <section class="about">
-        <div class="container  section__line">
+        <div class="container">
             <h2 class="title" id="about">
                 Путеводитель по Хорватии
             </h2>
@@ -79,7 +74,7 @@
             </p>
             <div class="about__statistics">
 
-                <div class="about__statistics-row1">
+                <div class="about__statistics-row">
 
                     <div class="about__statistics-item">
                         <img class="about__statistics-images" src="images/statistics-1.svg" alt="">
@@ -95,7 +90,7 @@
 
                 </div>
 
-                <div class="about__statistics-row2">
+                <div class="about__statistics-row">
 
                     <div class="about__statistics-item">
                         <img class="about__statistics-images" src="images/statistics-2.svg" alt="">
@@ -111,7 +106,7 @@
 
                 </div>
 
-                <div class="about__statistics-row3">
+                <div class="about__statistics-row">
 
                     <div class="about__statistics-item">
                         <img class="about__statistics-images" src="images/statistics-3.svg" alt="">
@@ -127,10 +122,13 @@
 
                 </div>
             </div>
+            <div class="section__line">
+                <img src="images/Border_line.png" alt="">
+            </div>
         </div>
     </section>
     <section class="attractions">
-        <div class="container  section__line">
+        <div class="container">
             <h2 class="title" id="attractions">
                 Достопримечательности
             </h2>
@@ -141,46 +139,38 @@
                 достопримечательности Хорватии. Но мы все-таки подготовили для вас описание основных из них.
             </p>
             <div class="attractions__gallery">
-                <a href="images/Bol.jpg"><img src="images/Bol.jpg" alt="">Бол - Остров Брач</a>
-                <a href="images/Dubrovnik.jpg"><img src="images/Dubrovnik.jpg" alt=""></a>
-                <a href="images/Pula.jpg"><img src="images/Pula.jpg" alt=""></a>
-                <a href="images/Plitvice lakes.jpg"><img src="images/Plitvice lakes.jpg" alt=""></a>
-                <a href="images/Rovinj.jpg"><img src="images/Rovinj.jpg" alt=""></a>
-                <a href="images/KRK.jpg"><img src="images/KRK.jpg" alt=""></a>
-
-                <!-- <div class="attractions__gallery-items">
+                <a href="images/Bol.jpg" class="gallery-item">
+                    <div class="gallery-item-hover">Бол - Остров Брач</div>
                     <img src="images/Bol.jpg" alt="">
+                </a>
+                <a href="images/Dubrovnik.jpg" class="gallery-item">
+                    <div class="gallery-item-hover">Дубровник</div>
                     <img src="images/Dubrovnik.jpg" alt="">
+                </a>
+                <a href="images/Pula.jpg" class="gallery-item">
+                    <div class="gallery-item-hover">Амфитеатр Пулы</div>
                     <img src="images/Pula.jpg" alt="">
+                </a>
+                <a href="images/Plitvice lakes.jpg" class="gallery-item">
+                    <div class="gallery-item-hover">Плитвицкие озера</div>
                     <img src="images/Plitvice lakes.jpg" alt="">
-                    <img src="images/Rovinj.jpg" alt="">
-                    <img src="images/KRK.jpg" alt=""> -->
-
-                <!-- <div class="attractions__gallery-item">
-                        <img src="images/Bol.jpg" alt="">
-                    </div>
-                    <div class="attractions__gallery-item">
-                        <img src="images/Dubrovnik.jpg" alt="">
-                    </div>
-                    <div class="attractions__gallery-item">
-                        <img src="images/Pula.jpg" alt="">
-                    </div>
-                    <div class="attractions__gallery-item">
-                        <img src="images/Plitvice lakes.jpg" alt="">
-                    </div>
-                    <div class="attractions__gallery-item">
-                        <img src="images/Rovinj.jpg" alt="">
-                    </div>
-                    <div class="attractions__gallery-item">
-                        <img src="images/KRK.jpg" alt="">
-                    </div> -->
-                <!-- </div> -->
+                </a>
+                <a href="images/Rovinj.jpg" class="gallery-item">
+                    <div class="gallery-item-hover">Ровинь</div>
+                    <img src="images/Rovinj.jpg" alt=""></a>
+                <a href="images/KRK.jpg" class="gallery-item">
+                    <div class="gallery-item-hover">Национальный парк Крка</div>
+                    <img src="images/KRK.jpg" alt="">
+                </a>
+            </div>
+            <div class="section__line">
+                <img src="images/Border_line.png" alt="">
             </div>
         </div>
     </section>
 
     <section class="seasons">
-        <div class="container  section__line">
+        <div class="container">
             <h2 class="title" id="seasons">
                 Когда ехать в Хорватию
             </h2>
@@ -192,11 +182,85 @@
                 достопримечательности в Хорватии можно в любое время года. Так что вам нужно только
                 определиться с целью поездки, и вы легко поймете, когда ехать в Хорватию.
             </p>
+            <div class="four__seasons">
+                <div class="season">
+                    <img src="images/Winter.jpg" alt="">
+                    <div class="season__box">
+                        <h3 class="title__season">
+                            Зимой
+                        </h3>
+                        <p class="season__text container-content">
+                            Зимой в Хорватии начинается второй высокий сезон, ведь с декабря по март здесь активно 
+                            действуют горнолыжные курорты. В горах в это время температура опускается до -10°C, 
+                            создавая вполне комфортные условия для катания на горных лыжах. А в низинах погода в 
+                            Хорватии зимой очень теплая, нижняя температурная планка — +10°C. На побережье обычно 
+                            еще теплее.
+                        </p>
+                    </div>
+                </div>                        
+
+                <div class="season">
+                    <div class="season__box">
+                        <h3 class="title__season">
+                            Весной
+                        </h3>
+                        <p class="season__text container-content">
+                            Погода в Хорватии весной стремительно переходит от прохлады к теплу. Уже в 
+                            марте столбик термометра достигает +15°C и даже больше. В считанные дни все 
+                            вокруг расцветает, и пора цветения в Хорватии — самое благоприятное время для 
+                            экскурсий. Ведь нет ничего красивее, чем сады и парки Хорватии в весеннем 
+                            убранстве. В конце мая уже можно начинать купаться, стартует яхтенный сезон и 
+                            сезон дайвинга. А для рыбаков и завсегдатаев термальных курортов и вовсе нет 
+                            разницы, когда выбираться на отдых.
+                        </p>
+                    </div>
+                    <img src="images/Spring.jpg" alt="">
+                </div>                
+
+                <div class="season">
+                    <img src="images/Summer.jpg" alt="">
+                    <div class="season__box">
+                        <h3 class="title__season">
+                            Летом
+                        </h3>
+                        <p class="season__text container-content">
+                            Лето в Хорватии традиционно жаркое, температура может достигать и +30°C. 
+                            Но, за счет сухого климата и морских бризов, погода в Хорватии летом довольно 
+                            приятная. Лето — самое время для отдыха на живописных пляжах страны, а еще для 
+                            поездок и походов по национальным паркам Хорватии. Ведь Хорватия — одна из самых 
+                            популярных стран для экотуризма, и в теплое время года пешие и велосипедные 
+                            путешествия здесь не редкость.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="season">
+                    <div class="season__box">
+                        <h3 class="title__season">
+                            Осенью
+                        </h3>
+                        <p class="season__text container-content">
+                            Погода в Хорватии осенью очень теплая, и долгое время создается ощущение, что 
+                            лето все еще не закончилось. Сентябрь на пляжах Хорватии — время бархатного 
+                            сезона, когда уже нет летней жары, и купание особенно комфортно. В октябре 
+                            природа расцвечивается золотым и алым, а столбик термометра держится на 
+                            уровне +20°C. На побережье он и в ноябре опускается лишь до +15°C, а вот в 
+                            столице температура ноября не достигает и +9°C. Осень неплохо подходит для 
+                            посещения термальных курортов, для рыбалки и для экскурсий по хорватским 
+                            достопримечательностям.
+                        </p>
+                    </div>
+                    <img src="images/Autumn.jpg" alt="">
+                </div>                
+            </div>
+            <div class="section__line">
+                <img src="images/Border_line.png" alt="">
+            </div>
         </div>
     </section>
 
     <section class="visa">
-        <div class="container section__line">
+        <div class="container">
             <h2 class="title"  id="visa">
                 Виза в Хорватию
             </h2>
@@ -214,11 +278,14 @@
                 но для этого нужно оформлять визу. Это можно сделать в визовом центре или консульстве 
                 страны. Стоимость оформления визы — около 35 евро.
             </p>
+            <div class="section__line">
+                <img src="images/Border_line.png" alt="">
+            </div>
         </div>
     </section>
 
     <section class="bycar">
-        <div class="container">
+        <div class="container ">
             <h2 class="title" id="bycar">
                 В Хорватию на машине
             </h2>
@@ -240,7 +307,7 @@
                 (Collision damage waiver), страховка на случай угона (Theft waiver), дополнительные 
                 сборы в аэропорту и все местные налоги. Дополнительно оплачиваются навигатор, детское 
                 кресло, страховка для второго водителя, суперстраховка (без франшизы), «Зеленая карта» для 
-                ересечения границы. Ни одна страховка не покрывает повреждения шин и стекол.<br><br>
+                пересечения границы. Ни одна страховка не покрывает повреждения шин и стекол.<br><br>
 
                 Стоимость литра бензина в Хорватии составляет 1.30 EUR.
             </p>
@@ -249,7 +316,11 @@
 
     <footer class="footer">
         <div class="footer__container">
-
+            <div class="footer__links-social">
+                <a href="#"><img src="images/facebook-logo.svg" alt=""></a>
+                <a href="#"><img src="images/instagram-logo.svg" alt=""></a>
+                <a href="#"><img src="images/youtube-logo.svg" alt=""></a>
+            </div> 
             <div class="footer__copy">
                 © 2020 Все права защищены
             </div>
