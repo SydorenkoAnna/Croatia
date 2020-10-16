@@ -30,7 +30,6 @@ body{
 
 .header__top{
     background: rgba(196, 196, 196, 0.5);
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -179,6 +178,10 @@ body{
     justify-content: center;
 }
 
+.section__line img{
+    max-width: 100%;
+}
+
 .attractions__gallery{
     margin-bottom: 90px;
     display: flex;
@@ -234,8 +237,7 @@ body{
 }
 
 .season img{
-    height: 300px;
-    width: 500px;
+    max-width: 100%;
 }
 
 .title__season{
@@ -467,6 +469,8 @@ body{
 
     .logo{
         width: 38%;
+        padding: 0 0 0 10px;
+
     }
     
     .menu__btn{
