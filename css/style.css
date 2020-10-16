@@ -31,7 +31,6 @@ body{
 .header__top{
     background: rgba(196, 196, 196, 0.5);
     width: 100%;
-    max-width: 1600px;
     display: flex;
     justify-content: space-between;
     align-items: center;
