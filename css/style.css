@@ -34,6 +34,7 @@ body{
     justify-content: space-between;
     align-items: center;
     height: 150px;
+    z-index: 3;
 }
 
 .logo{
@@ -44,6 +45,8 @@ body{
     display: flex;
     justify-content: space-between;
     padding-right: 14px;
+    position: relative;
+    z-index: 2;
 }
 
 .menu__list-item{
@@ -251,6 +254,10 @@ body{
     margin-bottom: 50px;
 }
 
+.bycar__img img{
+    max-width: 100%;
+}
+
 .footer{
     text-align: center;
 }
@@ -278,4 +285,397 @@ body{
     font-size: 14px;
     font-weight: 400;
     font-family: Montserrat;
+}
+
+.menu__btn{
+    display: none;
+}
+
+
+@media (max-width: 1280px){
+
+    .header__top{
+        height: 100px;
+    }
+
+    .logo{
+        padding-left: 30px;
+        width: 25%;
+    }
+
+    .logo img{
+        width: 100%
+    }
+
+    .menu__list-link{
+        font-weight: 500;
+        padding: 64px 23px 0 0;
+    }
+
+    .header__container{
+        padding: 0 30px;
+    }
+    
+    .header__title{
+        font-size: 76px;
+        padding-top: 35px;
+        margin-bottom: 5px;
+    }
+    
+    .header__text{
+        font-size: 20px;
+        margin-bottom: 33px;
+    }
+    
+    .header-content__btn{
+        font-weight: 500;
+        font-size: 20px;
+}
+
+@media (max-width: 1180px){
+
+    .title{
+        padding-top: 80px;
+        margin-bottom: 30px;
+    }
+
+    .attractions__gallery{
+        margin-bottom: 80px;
+    }
+    
+    .gallery-item{
+        flex: 26%;
+    }
+    
+    .container-content{
+        margin-bottom: 80px;
+    }
+
+    .gallery-item img{
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    .four__seasons{
+        margin-bottom: 20px;
+    }
+
+    .season{
+        margin-bottom: 20px;
+    }
+
+    .season img{
+        width: 50%;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    
+    .season__text{
+        width: 100%;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+}
+
+@media (max-width: 980px){
+
+    .logo{
+        width: 23%;
+    }
+
+    .menu__list-link{
+        font-size: 12px;
+    }
+
+    .header__title{
+        font-size: 60px;
+        padding-top: 35px;
+        margin-bottom: 5px;
+    }
+    
+    .header__text{
+        font-size: 17px;
+        width: 70%;
+        text-shadow: 0px 1px 1px rgba(155, 45, 45, 0.2);
+    }
+    
+    .header-content__btn{
+        font-size: 17px;
+    }
+
+    .container-content{
+        margin-bottom: 50px;
+    }
+
+    .about__statistics{
+        margin-bottom: 50px;
+    }
+
+    .attractions__gallery{
+        margin-bottom: 50px;
+    }
+
+    .gallery-item-hover{
+        font-size: 16px;
+    }
+
+    .gallery-item img{
+        margin-bottom: 0;
+    }
+
+    .four__seasons{
+        margin-bottom: 10px;
+    }
+
+    .season{
+        margin-bottom: 10px;
+    }
+
+    .season img{
+        width: 50%;
+        height: 200px;
+    }
+    
+    .season__text{
+        width: 100%;
+    }
+
+    .bycar__img{
+        margin-bottom: 50px;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    body{
+        font-size: 14px;
+    }
+
+    body.lock{
+        overflow: hidden;
+    }
+
+    .header__top{
+        background: rgba(196, 196, 196, 1);
+        position: fixed;
+        width: 100%;
+        height: 60px;
+        z-index: 50;
+    }
+
+    .logo{
+        width: 38%;
+    }
+    
+    .menu__btn{
+        display: block;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+        position: relative;
+        right: 30px;
+        top: 2px;
+        z-index: 4;
+    }
+
+    .menu__btn span{
+        position: absolute;
+        background-color: #D58071;
+        width: 100%;
+        height: 3px;
+        left: 0;
+        top: 8px;
+        transition: all 0.3s ease 0s;
+    }
+
+    .menu__btn:before,
+    .menu__btn:after{
+        content: '';
+        background-color: #D58071;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+    }
+
+    .menu__btn:before{
+        top: 0;
+    }
+
+    .menu__btn:after{
+        bottom: 0;
+    }
+
+    .menu__btn.active span{
+        transform: scale(0);
+    }
+
+    .menu__btn.active:before{
+        transform: rotate(45deg);
+        top: 9px;
+    }
+
+    .menu__btn.active:after{
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+
+    .menu__list{
+        display: block;
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        padding: 90px 0px 0px 0px;
+        background-color: #E3E1E1;
+        z-index: 3;
+    }
+
+    .menu__list.active{
+        top: 0;
+        transition: all 0.3s ease 0s;
+    }
+
+    .menu__list-item{
+        text-align: left;
+        margin: 0px 0px 0px 30px;
+    }
+
+    .menu__list-link{
+        padding: 30px 23px 0 0;
+        color: #D58071;
+        transition: all 0s;
+        display: block;
+    }
+
+    .menu__list-link:hover{
+        font-weight: 700;
+    }
+
+    .header__title{
+        font-size: 46px;
+        line-height: 80px;
+        text-align: center;
+        padding-top: 120px;
+    }
+    
+    .header__text{
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .header-content__btn{
+        display: none;
+    }
+
+    .title{
+        padding-top: 60px;
+        margin-bottom: 20px;
+        font-size: 28px;
+        line-height: 36px;
+    }
+    
+    .container-content{
+        margin-bottom: 30px;
+    }
+
+    .about__statistics{
+        width: 100%;
+        height: 100%;
+        padding: 15px 0;
+        margin-bottom: 30px;
+    }
+    
+    .about__statistics-item{
+        margin: 0 0 10px;
+    }
+    
+    .about__statistics-images{
+        width: 34px;
+        height: 30px;
+        margin-bottom: 5px;
+    }
+    
+    .about__statistics-title{
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 5px;
+    }
+    
+    .about__statistics-text{
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .attractions__gallery{
+        margin-bottom: 30px;
+    }
+
+    .gallery-item-hover{
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .season{
+        flex-wrap: wrap;
+        height: 100%;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+  
+    .season__text{
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .season img{
+        width: auto;
+        height: auto;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .season__box-1{
+        order: -1;
+    }
+
+    .footer__links-social{
+        padding-top: 30px;
+        margin-bottom: 24px;
+    }
+    
+    .footer__links-social img{
+        width: 30px;
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+    
+    .footer__copy{
+        padding-bottom: 30px;
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 460px){
+
+    .title{
+        letter-spacing: 0.01em;
+        font-size: 23px;
+    }
+
+    .about__statistics{
+       
+    }
+
+    .about__statistics-item{
+        margin: 0 10px 10px;
+    }
+
 }
