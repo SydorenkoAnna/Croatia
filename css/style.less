@@ -358,9 +358,15 @@ body {
     margin-bottom: 0;
 }
 
-.section__line{
-    display: flex;
-    justify-content: center;
+.section__line{    
+    margin: 0 auto;
+    img{
+        display: block;
+        max-width: 100%;
+    }
+    @media @mobile-sm{
+        width: 250px;
+    }
 }
 
 .attractions__gallery{
