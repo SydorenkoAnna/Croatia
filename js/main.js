@@ -12,13 +12,13 @@ $(document).ready(function() {
 				},
 			});
 
-	$('.menu__btn').click(function(event) {
-		$('.menu__btn, .menu__list').toggleClass('active');
+	$('.burger').click(function(event) {
+		$('.burger, .nav').toggleClass('active');
 		$('body').toggleClass('lock')
 	});
 
-	$('.menu__list-link').click(function(event) {
-		$('.menu__btn, .menu__list').toggleClass('active');
+	$('.nav-link').click(function(event) {
+		$('.burger, .nav').toggleClass('active');
 		$('body').removeClass('lock')
 	});
 });
